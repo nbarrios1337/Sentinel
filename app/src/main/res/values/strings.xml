@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Sentinel</string>
+    <string name="startbuttontext">Start Sentinel</string>
+    <string name="empty_sensor">No Sensor Found</string>
+</resources>
