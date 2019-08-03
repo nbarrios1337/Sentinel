@@ -27,12 +27,12 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
         mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
 
         viewManager = LinearLayoutManager(this)
-        viewAdapter = MySensorAdapter(mSensorManager.getSensorList(Sensor.TYPE_ALL).toTypedArray())
+        viewAdapter = MySensorAdapter(this, mSensorManager.getSensorList(Sensor.TYPE_ALL).toTypedArray())
 
         recyclerView = findViewById<RecyclerView>(R.id.sensor_recycler_view).apply {
             // use this setting to improve performance if you know that changes
             // in content do not change the layout size of the RecyclerView
-            // setHasFixedSize(true)
+            setHasFixedSize(true)
 
             // use a linear layout manager
             layoutManager = viewManager

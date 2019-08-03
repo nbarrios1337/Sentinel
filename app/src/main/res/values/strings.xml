@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">Sentinel</string>
-    <string name="startbuttontext">Start Sentinel</string>
-    <string name="empty_sensor">No Sensor Found</string>
+    <string name="app_id">com.nbarrios1337.sentinel</string>
+    <string name="sensor_details_id">ID: </string>
+    <string name="sensor_details_max_range">Maximum Range:</string>
+    <string name="sensor_details_min_delay">Minimum Delay:</string>
+    <string name="sensor_details_name">Name:</string>
+    <string name="sensor_details_power">Power Draw:</string>
+    <string name="sensor_details_reporting_mode">Reporting Mode:</string>
+    <string name="sensor_details_resolution">Resolution:</string>
+    <string name="sensor_details_stringtype">"Type (String): "</string>
+    <string name="sensor_details_type">"Type (Int): "</string>
+    <string name="sensor_details_vendor">Vendor: </string>
+    <string name="sensor_details_version">Version: </string>
 </resources>
