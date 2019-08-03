@@ -24,9 +24,7 @@ android:
     # sys-img-x86-android-29
     - sys-img-armeabi-v7a-android-24
   licenses:
-    - 'android-sdk-preview-license-52d11cd2'
-    - 'android-sdk-license-.+'
-    - 'google-gdk-license-.+'
+    - '.+'
 
 # Emulator Management: Create, Start and Wait
 before_script:
