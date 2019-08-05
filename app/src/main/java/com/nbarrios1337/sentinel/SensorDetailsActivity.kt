@@ -12,8 +12,11 @@ class SensorDetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sensor_details)
-        Log.i(TAG, "in onCreate of SensorDetailsActivity")
 
+        setDetails()
+    }
+
+    private fun setDetails() {
         val keyPrefix = R.string.app_id.toString().plus("SENSOR_DETAILS_")
 
         val idTextView = findViewById<TextView>(R.id.sensor_details_id)

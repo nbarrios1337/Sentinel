@@ -27,7 +27,10 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
         mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
 
         viewManager = LinearLayoutManager(this)
-        viewAdapter = MySensorAdapter(this, mSensorManager.getSensorList(Sensor.TYPE_ALL).toTypedArray())
+        viewAdapter = MySensorAdapter(
+            this,
+            mSensorManager.getSensorList(Sensor.TYPE_ALL).sortedBy { sensor -> sensor.type }.toTypedArray()
+        )
 
         recyclerView = findViewById<RecyclerView>(R.id.sensor_recycler_view).apply {
             // use this setting to improve performance if you know that changes
